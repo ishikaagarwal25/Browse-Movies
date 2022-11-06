@@ -1,0 +1,298 @@
+.detail-container {
+    display: flex;
+    justify-content: center;
+}
+
+.detail {
+height: 93vh;
+    width: 70vw;
+  display: flex;
+  align-items: center;
+}
+
+.detail-poster {
+    height: 100%;
+}
+
+.detailImg-container {
+    box-shadow: 3px 3px 20px 6px #191919;
+}
+
+.movie-detail {
+    width: auto;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+} 
+
+.detail-title2 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.detail-rating {
+    display: flex;
+    align-items: center;
+    margin-right: 2.3rem;
+}
+
+.rating-num{
+    margin-right: 4px;
+}
+
+.detail-title {
+    padding-right: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.detail-title h1 {
+    font-size: 3.5rem;
+}
+
+.detail-date, .detail-duration, .detail-title2 {
+margin-bottom: 0.5rem;
+}
+
+.genres {
+    margin-top: 1.25rem;}
+
+.genre {
+    padding: .5rem;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-right: 1rem;
+}
+
+.synopsis {
+    margin-top: 2rem;
+}
+
+.detail-date span, .detail-duration span, .synopsis span{
+    font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+
+    .detail {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .detail-rating {
+            display: flex;
+            align-items: center;
+            margin-right: 1rem;
+        }
+
+                .rating-num {
+                    margin-right: 2px;
+                }
+
+    .detailImg-container {
+        margin-top: 3rem;
+        margin-right: 0rem;
+        width: 250px;
+        height: 400px;
+    }
+
+    .movie-detail {
+        margin-left: 1rem;
+        margin-top: 3rem;
+    }
+
+    .detail {
+        width: 85vw;
+    }
+
+    .detail-title h1 {
+        font-size: 2rem;
+    }
+
+    .detail-poster {
+        width: 250px;
+    }
+
+    .synopsis {
+        margin-bottom: 1rem;
+    }
+
+        .genre {
+            font-size: 0.7rem;
+            margin-right: 0.6rem;
+        }
+
+}
+
+@media screen and (min-width: 600px) {
+
+    .detail {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+
+
+    .detailImg-container {
+        margin-top: 3rem;
+        margin-right: 0rem;
+        width: 250px;
+            height: 400px;
+    }
+
+    .movie-detail {
+        margin-left: 1rem;
+        margin-top: 3rem;
+    }
+
+    .detail {
+        width: 85vw;
+    }
+
+     .detail-title h1 {
+        font-size: 2rem;
+    }
+
+        .detail-poster {
+            width: 250px;
+        }
+    
+} 
+
+@media screen and (min-width: 768px) {
+    .movie-detail {
+        margin-left: 1rem;
+        /* margin-right: 1rem; */
+        /* margin-top: 6rem; */
+    }
+
+    .detail {
+        width: 90vw;
+                display: flex;
+                align-items: center;
+    
+    }
+
+    .detail-title h1 {
+        font-size: 2rem;
+    }
+    .detail-title h3 {
+        font-size: 1.2rem;
+    } 
+    
+        .detail-poster {
+            width: 250px;
+        }
+    
+        .detailImg-container {
+            width: 250px;
+            height: 400px;
+            margin-right: 3rem;
+            box-shadow: 3px 3px 20px 6px #191919;
+            /* margin-top: 6rem; */
+        }
+}
+
+@media screen and (min-width: 992px) {
+    .movie-detail {
+        margin-left: 2rem;
+    }
+
+    .detail{
+        width: 80vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .movie-detail {
+        margin-left: 4rem;
+    }
+        .genre {
+            padding: .5rem;
+            border: 2px solid white;
+            border-radius: 20px;
+            margin-right: 1rem;
+        }
+
+                .detail-poster {
+                    width: 300px;
+                    height: 100%;
+                }
+        
+                .detailImg-container {
+                    width: 300px;
+                    height: 460px;
+                    /* margin-right: 3rem; */
+                    box-shadow: 3px 3px 20px 6px #191919;
+                    margin-top: 0;
+                }
+                                .detail {
+                                    height: 93vh;
+                                    width: 70vw;
+                                    display: flex;
+                                    align-items: center;
+                                }
+                                                                .movie-detail {
+                                margin-top: 0;                                    width: auto;
+                                                                    margin-left: 4rem;
+                                                                    margin-bottom: 1rem;
+                                                                    display: flex;
+                                                                    flex-direction: column;
+                                                                    /* justify-content: center; */
+                                                                    /* margin: auto 0 auto 6rem */
+                                                                }
+                                
+                                                                .detail-title2 {
+                                                                    display: flex;
+                                                                    justify-content: flex-start;
+                                                                    /* margin-bottom: 0.5rem; */
+                                                                }
+                                
+                                                                .detail-rating {
+                                                                    display: flex;
+                                                                    align-items: center;
+                                                                    margin-right: 2.3rem;
+                                                                }
+                                
+                                                                .rating-num {
+                                                                    margin-right: 4px;
+                                                                }
+                                
+                                                                .detail-title {
+                                                                    padding-right: 1rem;
+                                                                    margin-bottom: 1.5rem;
+                                                                }
+                                
+                                                                .detail-title h1 {
+                                                                    font-size: 3.5rem;
+                                                                }
+                                
+                                                                .detail-date,
+                                                                .detail-duration,
+                                                                .detail-title2 {
+                                                                    margin-bottom: 0.5rem;
+                                                                }
+                                
+                                                                .genres {
+                                                                    margin-top: 1.25rem;
+                                                                }
+                                
+        .genre {
+                                                                    padding: .5rem;
+                                                                    border: 2px solid white;
+                                                                    border-radius: 20px;
+                                                                    margin-right: 1rem;
+                                                                }
+                                
+                                                                .synopsis {
+                                                                    margin-top: 2rem;
+                                                                }
+                                
+                                                                .detail-date span,
+                                                                .detail-duration span,
+                                                                .synopsis span {
+                                                                    font-weight: 600;
+                                                                }                                                        
+
+}
+

@@ -1,0 +1,87 @@
+
+.cards {
+    transition: transform .2s;
+    display: inline-block;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    height: 350px;
+    min-width: 200px;
+   box-shadow: 3px 3px 20px 6px #191919;
+    margin: 1rem;
+}
+
+.cards:hover {
+    transform: scale(1.5,1.26);
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: 1px solid white;
+}
+
+.card-img {
+    height: 350px;
+    width: 100%;
+}
+
+.cards-overlay {
+    position: absolute;
+    padding-right: 1.5rem;
+    bottom: 0px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1));
+    opacity: 0;
+    transition: opacity .2s;
+    color: white;
+}
+
+.cards-overlay:hover{
+    opacity: 1;
+}
+
+.card-rating {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 6px 1rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.card-title {
+    margin: 0 0 3px 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.card-date {
+margin: 0 0 3px 1rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.rating{
+margin-right: 3px;
+}
+
+.card-desc {
+    font-size: 0.7rem;
+    text-align: left;
+    line-height: 1rem;
+    margin: 0 0 1rem 1rem;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 600px) {
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
