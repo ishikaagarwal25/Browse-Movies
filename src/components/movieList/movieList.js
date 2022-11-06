@@ -15,7 +15,6 @@ const MovieList = () => {
     )
       .then((response) => response.json())
       .then((data) => setMovies(data.results));
-  };
   }, []);
 
   useEffect(() => {
@@ -26,7 +25,6 @@ const MovieList = () => {
     )
       .then((response) => response.json())
       .then((data) => setMovies(data.results));
-  };
   }, [type]);
 
   return (
