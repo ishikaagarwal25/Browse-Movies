@@ -8,7 +8,6 @@ const MovieList = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-   const getData = () => {
     fetch(
       `https://api.themoviedb.org/3/movie/${
         type ? type : "popular"
@@ -20,7 +19,6 @@ const MovieList = () => {
   }, []);
 
   useEffect(() => {
-   const getData = () => {
     fetch(
       `https://api.themoviedb.org/3/movie/${
         type ? type : "popular"
