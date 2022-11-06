@@ -8,14 +8,7 @@ const MovieList = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    getData();
-  }, []);
-
-  useEffect(() => {
-    getData();
-  }, [type]);
-
-  const getData = () => {
+   const getData = () => {
     fetch(
       `https://api.themoviedb.org/3/movie/${
         type ? type : "popular"
@@ -24,6 +17,19 @@ const MovieList = () => {
       .then((response) => response.json())
       .then((data) => setMovies(data.results));
   };
+  }, []);
+
+  useEffect(() => {
+   const getData = () => {
+    fetch(
+      `https://api.themoviedb.org/3/movie/${
+        type ? type : "popular"
+      }?api_key=8a261f72a4659a088783050bd3356a96&language=en-US`
+    )
+      .then((response) => response.json())
+      .then((data) => setMovies(data.results));
+  };
+  }, [type]);
 
   return (
     <div className="movies-list">
